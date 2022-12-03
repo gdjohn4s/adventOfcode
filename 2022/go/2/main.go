@@ -45,3 +45,35 @@ func puzzle1() {
 	fmt.Println(totalScore)
 }
 
+// Day 2 Puzzle 2
+func puzzle2() {
+	file, err := os.Open(filename)
+	if err != nil {
+		println("Error opening %s -> %s", filename, err)
+	}
+
+	sc := bufio.NewScanner(file)
+
+	var (
+		totalScore int = 0
+	)
+
+	scores := map[string]int{
+		"A X": 3,
+		"A Y": 4,
+		"A Z": 8,
+		"B X": 1,
+		"B Y": 5,
+		"B Z": 9,
+		"C X": 2,
+		"C Y": 6,
+		"C Z": 7,
+	}
+
+	for sc.Scan() {
+		totalScore += scores[sc.Text()]
+	}
+	fmt.Println(totalScore)
+}
+
+
