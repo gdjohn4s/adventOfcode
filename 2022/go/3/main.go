@@ -47,3 +47,39 @@ func puzzle1() {
 	fmt.Println(totalPriority)
 }
 
+// Day 3 Puzzle 2
+func puzzle2() {
+	input, _ := os.Open(filename)
+	defer input.Close()
+	sc := bufio.NewScanner(input)
+
+	var totalPriorities int = 0
+
+	for sc.Scan() {
+		first := createSetOfItems(sc.Text())
+		sc.Scan()
+		second := createSetOfItems(sc.Text())
+		sc.Scan()
+		third := createSetOfItems(sc.Text())
+
+		for item := range first {
+			if second[item] && third[item] {
+				totalPriorities += int(unicode.ToLower(item) - 96)
+				if unicode.IsUpper(item) {
+					totalPriorities += 26
+				}
+				break
+			}
+		}
+	}
+	fmt.Println(totalPriorities)
+}
+
+func createSetOfItems(items string) (set map[rune]bool) {
+	set = make(map[rune]bool)
+	for _, item := range items {
+		set[item] = true
+	}
+	return
+}
+
