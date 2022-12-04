@@ -1,7 +1,12 @@
-# Advent Of Code Repository
-Welcome in my personal adventOfCode solution repository!
-The structure is composed by Year -> Language -> Puzzle Number -> Solution 
+# 🎄🎁 Advent of Code 2022! 🎁🎄
+The focus is canonically correct answers; making the correct datastructure in `c` to solve the problem as opposed to hacking my way through. (Until things get to complex then I'll revert to hacking 😅).
 
-For now i'm using golang but feel free to implement as much as languages you want!
+| Day | PT1 | PT2 |
+| --- | ---- | ---- |
+| [1](https://adventofcode.com/2022/day/1) | ⭐️ | ⭐️ |
+| [2](https://adventofcode.com/2022/day/2) | ⭐️ | ⭐️ |
+| [3](https://adventofcode.com/2022/day/3) | ⭐️ | ⭐️ |
+| [4](https://adventofcode.com/2022/day/4) | ⭐️ | ⭐️ |
 
-Thanks for contributing :)
+#### NB
+This Readme template was ispired by [Jamesbarford/aoc-2022](https://github.com/Jamesbarford/aoc-2022/blob/main/README.md?plain=1)
