@@ -1,5 +1,4 @@
 # 🎄🎁 Advent of Code 2022! 🎁🎄
-The focus is canonically correct answers; making the correct datastructure in `c` to solve the problem as opposed to hacking my way through. (Until things get to complex then I'll revert to hacking 😅).
 
 | Day | PT1 | PT2 |
 | --- | ---- | ---- |
